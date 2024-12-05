@@ -1,13 +1,15 @@
-func twoSum(nums []int, target int) []int {
-
-	var res []int
-	for i := 0; i < len(nums); i++ {
-		for f := 0; f < len(nums); f++ {
-			if i != f && nums[i]+nums[f] == target {
-				res = append(res, i)
-				break
-			}
-		}
+func isPalindrome(x int) bool {
+	res := true
+	fmt.Println("enter the num")
+	var x int
+	fmt.Scan(&x)
+	fmt.Println("enter the same number in reverse")
+	var m int
+	fmt.Scan(&m)
+	if x == m {
+		res = true
+	} else {
+		res = false
 	}
-	return res
+	fmt.Println(res)
 }
